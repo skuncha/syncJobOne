@@ -58,7 +58,7 @@ public class GlueAccountPage extends PageObject {
     	System.out.print("                    " + num);
     		waitFor(3).seconds();
     	getDriver().switchTo().alert().accept(); 
-			waitFor(12).seconds();
+			waitFor(15).seconds();
 		System.out.println("   :  " +getDriver().switchTo().alert().getText());
 		getDriver().switchTo().alert().accept();
 			waitFor(5).seconds();
@@ -68,8 +68,8 @@ public class GlueAccountPage extends PageObject {
 		File filePath = new File(fileloc);
 		if (filePath.isFile()) {
 			System.out.println("\n");
-			System.out
-					.println("         OREDRS THAT ARE SUCCESSFULLY CREATED ARE ");
+			System.out.println("         PLEASE SEE STATUS OF CUSTOMER ACCOUNTS SYNC DETAILS ");
+			System.out.println("\n");
 			String file = filePath.getAbsolutePath();
 			CSVTestDataSource testDataSrc = new CSVTestDataSource(file);
 			waitFor(5).seconds();
@@ -83,9 +83,10 @@ public class GlueAccountPage extends PageObject {
 					Thucydides.takeScreenshot();
 					CCIMailIntegration(rowNum);
 				} catch (Exception e) {
-					System.out.println("                       	 " + rowNum +"   : ---> SORRY, Please try again (Latency Issue)");
+					System.out.println("                       " + rowNum +"   : ---> SORRY, Please try again (Latency Issue)");
 				}
 			}
 		}
+		System.out.println("\n");
 	}
 }
