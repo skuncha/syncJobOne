@@ -251,12 +251,12 @@ public class GlueAccountPage extends PageObject {
 								waitFor(1).seconds();
 								
 /********************************************************************************************************************************************************************************************************************************************/							
-								finish().click();
+//								finish().click();
 							
 		//************** Launch OrderPlugin and Create Order*************************************************//*	
 							
-						 	 waitFor(15).seconds();
-						 	System.out.println("  + Order Plugin OK too!" );
+//						 	 waitFor(15).seconds();
+//						 	System.out.println("  + Order Plugin OK too!" );
 				/*	     	 	 String sourceURL =getDriver().findElement(By.xpath("//*[@id='j_id0:j_id8']/div[2]/iframe")).getAttribute("src");
 					     	 	 String[] firstsplit = sourceURL.split("authorizationcode=");
 					     	 	 String[] secondpartsplit = firstsplit[1].split("\\&clientid=");
