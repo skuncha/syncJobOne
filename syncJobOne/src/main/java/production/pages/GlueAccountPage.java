@@ -247,7 +247,7 @@ public class GlueAccountPage extends PageObject {
 										waitFor(1).second();
 									}
 							clickNext().click();
-							System.out.print("       " +rowNum + " ---> Data looks OK" );
+							System.out.println("       " +rowNum + " ---> Data looks OK" );
 								waitFor(1).seconds();
 								
 /********************************************************************************************************************************************************************************************************************************************/							
