@@ -9,6 +9,7 @@ import production.pages.GlueAccountPage;
  * @author srinivasa.kuncha
  *
  */
+@SuppressWarnings("serial")
 public class EndUserSteps extends ScenarioSteps {
 
     GlueAccountPage dictionaryPage;
